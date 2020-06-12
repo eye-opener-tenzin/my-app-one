@@ -1,0 +1,13 @@
+techs-MacBook-Pro:my-app-one tech$ ls
+README.md               package-lock.json       public                  yarn.lock
+node_modules            package.json            src
+techs-MacBook-Pro:my-app-one tech$ cd src
+techs-MacBook-Pro:src tech$ ls
+App.css                 App.test.js             index.css               logo.svg
+App.js                  Untitled-1              index.js                serviceWorker.js
+techs-MacBook-Pro:src tech$ mkdir components
+techs-MacBook-Pro:src tech$ touch components/{home.js,footer.js,introductions.js,chapters.js,aboutus.js,donations.js}
+techs-MacBook-Pro:src tech$ 
+
+
+

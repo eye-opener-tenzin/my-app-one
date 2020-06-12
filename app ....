@@ -1,0 +1,117 @@
+import React, { Component } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+
+class App extends Component {
+
+  chaptersObjs = [
+    {
+      title: "Spacious Awareness"
+    },
+    {
+      title: "Thunderbolt"
+    },
+    {
+      title: "Jewel"
+    },
+    {
+      title: "Lotus"
+    },
+    {
+      title: "Action"
+    }
+  ];
+
+  createChaptersTable() {
+    let views = [];
+
+
+
+    this.chaptersObjs.forEach((obj, index, array) => {
+
+             views.push(<View style={styles.titleText}>  
+                  <TouchableOpacity>          
+                  <Text>Part {index+1}</Text>
+                  </TouchableOpacity>
+                  <Text>{obj.title}</Text>
+              </View>
+             )
+    });
+
+    return views;
+  }
+
+
+  render() {
+    return (
+   <View style={styles.app}>
+      <View>
+        <Text style={styles.header}>Healing After Death</Text>
+      </View> 
+
+        
+
+               <View>
+                 <Text style={styles.title}>Guide reflections for support a 
+                 loved one who has died in their journey through the after death states.                 </Text>
+               </View>
+              
+              <View style={styles.titleText}>  
+                  <TouchableOpacity>
+                  <Text>Introduction</Text>
+                  </TouchableOpacity>
+              </View>
+
+            { this.createChaptersTable() }
+
+            <View style={styles.titleText}>
+                  <TouchableOpacity>  
+                  <Text>Conclussion</Text>
+                  </TouchableOpacity>
+            </View>
+
+            <View style={styles.titleText}>
+                  <TouchableOpacity>
+                  <Text>Extra Blessing</Text>
+                  </TouchableOpacity>
+            </View>
+
+
+            <View style={styles.titleText}>
+                  <TouchableOpacity>
+                  <Text>Donation</Text>
+                  </TouchableOpacity>
+            </View>
+      </View>
+    ); 
+  }
+}
+        
+const styles = StyleSheet.create({
+
+  app: {
+    backgroundColor: '#F5FCFF'
+  },
+  header: {
+    textAlign: 'center',
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: 'green',
+    padding: 20,
+
+  },
+
+  title: {
+    textAlign: 'center', 
+    padding: 20
+
+  },
+
+  titleText: {
+    backgroundColor: '#ffffff',  
+    margin: 15,
+    padding: 15,
+
+  }
+})
+
+export default App;

@@ -1,0 +1,47 @@
+<View style={styles.titleText}>  
+                  <TouchableOpacity>
+                  <Text>Introduction</Text>
+                  </TouchableOpacity>
+              </View>
+
+              <View style={styles.titleText}>  
+                  <TouchableOpacity>          
+                  <Text>Part 1</Text>
+                  </TouchableOpacity>
+                  <Text>Spacious Awareness</Text>
+                
+              </View>
+
+              <View style={styles.titleText}> 
+                    <TouchableOpacity>    
+                    <Text s>Part 2</Text>
+                    </TouchableOpacity>
+                    <Text>Thunderbolt</Text>
+                    
+              </View>
+                            
+              <View style={styles.titleText}> 
+                    <TouchableOpacity>
+                    <Text>Part 3</Text>
+                    </TouchableOpacity>
+                    <Text>Jewel</Text>
+                    
+            </View>
+            
+
+            <View style={styles.titleText}> 
+                    <TouchableOpacity>
+                    <Text>Part 4</Text>
+                    </TouchableOpacity>
+                    <Text>Lotus</Text>
+                    
+            </View>
+
+
+            <View style={styles.titleText}> 
+                    <TouchableOpacity>
+                    <Text>Part 5</Text>
+                    </TouchableOpacity>
+                    <Text>Action</Text>
+                    
+            </View>
